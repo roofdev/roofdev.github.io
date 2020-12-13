@@ -55,6 +55,7 @@
     border-radius: 1.5ch;}
 body {
     height:100%;
+    background-image: url(sitebkr.png);
     background-color:#111111;
     color:#ffffff;
 }
