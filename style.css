@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+.top {
+    position: fixed;
+    background-color:#303030;
+    width:100%;
+    color:#fafafa;
+    padding: 0%;
+    border-radius: 0px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: x-large;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.faketop {
+    width:100%;
+    color:#e9e9e9;
+    padding: 0%;
+    border-radius: 0px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: x-large;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    height:100%;
+    background-color:#111111;
+    color:#ffffff;
+}
+t {
+    font-family: 'Comfortaa', cursive;
+}
