@@ -1,112 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
-.top {
-    position: fixed;
-    width: 97%;
-    color:#fafafa;
-    padding: 0%;
-    top: 0px;
-    left: 1.5%;
-    text-align: center;
-    font-size: 1.6em;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    height:4em;
-    margin: 0 auto;
-    background-color: #505050;
-    border-radius: 1.5ch;
+@@ -1,117 +0,0 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+button {
+    width:175;
+    height:50;
+    border-radius:20px;
+    background-color:#ce2727;
+    border:none;
+    box-shadow: 10px 10px 0px #2e2828;
+    font-size:large;
+
 }
-.roof {
-    z-index:-1;
-    position:relative;
-    width: 95%;
-    color:#fafafa;
-    padding: 0%;
-    top: 0px;
-    left: 2.5%;
-    text-align: center;
-    font-size: 5em;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    height:4em;
-    margin: 0 auto;
-    background-color: #505050;
-    border-radius: 0 0 .75ch .75ch;
-    background-image: url(codebkr.png)
+button:hover {
+    background-color: #ce2727;
+    box-shadow: 5px 5px 0px #2e2828;
+    transform: translate(5px, 5px);
+
+    
 }
-.centertext {
-    top: 25%;
-    transform: translateY(-25%);
+html {
+    background-color:#181717;
+    padding:0px;
 }
-.faketop {
-    position: relative;
-    width: 97%;
-    color:#fafafa;
-    padding: 0%;
-    top: 0px;
-    left: 1.5%;
-    text-align: center;
-    font-size: 1.6em;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    height:3.65em;
-    margin: 0 auto;
-    border-radius: 1.5ch;}
 body {
-    height:100%;
-    background-image: url(sitebkr.png);
-    background-color:#111111;
-    color:#ffffff;
+    padding:0px;
 }
-p {
-    font-family: 'Baloo 2', cursive;
-    font-size: 1.6em;
-    text-indent: 4ch;
-    margin-left: 1ch;
+.header-right {
+    float:right;
+    padding-right:45px;
+    display:inline-block;
+    padding-top:15px;
+
 }
-h2 {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2ch;
-    color:whitesmoke;
-    text-align: center;
-    font-size:3em;
+.header-left {
+    float:left;
+    padding-top:15px;
+    padding-left:45px;
+    display:inline-block;
 }
-.footer {
-    position: fixed;
-    bottom: 50px;
-    color: #ffffff;
-    width: 100%;
-    height: 2ch;
-    padding-left:10px;
-    padding-top:10px;
-    font-size:xx-large;
-    font-weight:900;
-    z-index:2;
-    font-family: Arial, Helvetica, sans-serif;
+.title {
+    display:inline-block;
+    color:white;
+    margin:0px;
+    font-size:50px;
+    position:absolute;
 }
-.footerbg {
-    background-color:#202020;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    font-size:xx-large;
-    font-weight:900;
-    z-index:1;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 5rem;
+.main-image {
+    color:white;
+    position:absolute;
+    padding-top:25px;
+    padding-left:0px;
 }
-.fakebg {
-    position: relative;
-    width: 100%;
-    bottom: 0px;
-    font-size:xx-large;
-    font-weight:900;
-    z-index:1;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 5rem;
+.quote {
+    font-family: 'Slackey', cursive;
+    font-size:8ch;
+    color:white;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+.quotebk {
+    height:526px;
+    width:900px;
+    margin-left:900px;
+    margin-top:300px;
+    position:absolute;
+    opacity:100%;
+}
+.textbk {
+    border-top: 526px solid red;
+    border-bottom:0px solid transparent;
+    border-left: 250px solid transparent;
+    border-right: 0px solid transparent;
+    width: 1000px;
+    top:16.3ch;
+    left: 85ch;
+    opacity:100%;
+    position:absolute;
+    clip-path:inset(0% 15% 0% 0%);
+    
 }
 img {
-    width: 1.23ch;
-    height:1.23ch;
+    padding-left:0px;
+    height:750px;
+    clip-path:inset(15% 15% 15% 5%);
+    filter:blur(1px);
+}
+.desc {
+    font-family: 'Anton', sans-serif;
+    color:white;
+    margin-left:0px;
+    margin-top:0px;
+    position:absolute;
+}
+.descbk {
+    position:absolute;
+    bottom:5.5ch;
+    left:1ch;
+    width:100%;
+    font-size:10ch;
+}
+@media screen and (max-width: 1000px) {
+    .header {
+      float: none;
+      display: block;
+      text-align: left;
+      top: 2ch;
+    }
+}
+@media screen and (max-width: 1px) {
+    .header-right {
+        float: none;
+        display: block;
+        text-align: left;
+        padding:100px;
+    }
 }
