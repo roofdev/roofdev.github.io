@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
 .header {
     height:1%;
     width:100%;
@@ -5,6 +9,7 @@
     position:static;
 }
 body {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     padding:0px;
     margin:0px;
     background-color:#262626;
@@ -20,11 +25,16 @@ button {
     margin-right:2ch;
     margin-bottom:2ch;
 }
+
+a {
+    text-decoration:none;
+    color:unset;
+}
 .buttons {
     text-align: center;
 }
 button:hover {
-    animation: push 0.1s linear alternate;
+    animation: push 0.15s linear alternate;
     box-shadow: 5px 5px 0px #5d2424;
     transform: translate(5px, 5px);
 }
@@ -69,3 +79,11 @@ h1, h2, h3, h4, h5, h6 {
     color:white;
 }
 h1 {font-size:5ch; margin-top:1ch;}
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+  }
